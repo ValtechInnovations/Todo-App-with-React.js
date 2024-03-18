@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="ved paithani,ecommerce, paithani saree" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Master Computer</title>
+
+    <link rel="stylesheet" href="assets/css/google/g1.css" />
+    <link rel="stylesheet" href="assets/css/google/g2.css" />
+    <!-- Google Fonts -->
+    <link type="text/css" href="assets/css/google/g3.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
+
+    <!-- Modernizr -->
+    <script src="assets/js/modernizr.js"></script>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+      var url = "assets/js/whatsappchat.js";
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = url;
+      var options = {
+        enabled: true,
+        chatButtonSetting: {
+          backgroundColor: "#4dc247",
+          ctaText: "WhatsApp",
+          borderRadius: "25",
+          marginLeft: "50",
+          marginBottom: "80",
+          marginRight: "20",
+          position: "right",
+        },
+        brandSetting: {
+          brandName: "Master Computer",
+          brandSubTitle: "Online",
+          brandImg: "assets/images/logo2.png",
+          welcomeText: "Hi, there!\nHow can I help you?",
+          messageText: "Hello, I have a question about {{page_link}}",
+          backgroundColor: "#0a5f54",
+          ctaText: "Start Chat",
+          borderRadius: "25",
+          autoShow: false,
+          phoneNumber: "919860674691",
+        },
+      };
+      s.onload = function () {
+        CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName("script")[0];
+      x.parentNode.insertBefore(s, x);
+    </script>
+    <!-- End -->
+
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- REVOLUTION JS FILES -->
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.themepunch.tools.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.themepunch.revolution.min.js"
+    ></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+     (Load Extensions only on Local File Systems !  
+     The following part can be removed on Server for On Demand Loading) -->
+    <script
+      type="text/javascript"
+      src="assets/js/extensions/revolution.extension.actions.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/extensions/revolution.extension.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/extensions/revolution.extension.kenburn.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/extensions/revolution.extension.migration.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/extensions/revolution.extension.navigation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/extensions/revolution.extension.parallax.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/extensions/revolution.extension.video.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+        "use strict";
+        var revapi;
+        if ($("#rev_slider").revolution == undefined) {
+          revslider_showDoubleJqueryError("#rev_slider");
+        } else {
+          revapi = $("#rev_slider")
+            .show()
+            .revolution({
+              sliderType: "standard",
+              jsFileLocation: "assets/js/",
+              sliderLayout: "auto",
+              dottedOverlay: "none",
+              delay: 15000,
+              navigation: {
+                mouseScrollNavigation: "off",
+                onHoverStop: "off",
+                touch: {
+                  touchenabled: "on",
+                },
+                arrows: {
+                  style: "custom",
+                  enable: true,
+                  hide_onmobile: false,
+                  hide_under: 768,
+                  hide_onleave: false,
+                  tmp: "",
+                  left: {
+                    h_align: "left",
+                    v_align: "bottom",
+                    h_offset: 63,
+                    v_offset: 48,
+                  },
+                  right: {
+                    h_align: "left",
+                    v_align: "bottom",
+                    h_offset: 85,
+                    v_offset: 48,
+                  },
+                },
+                bullets: {
+                  enable: false,
+                },
+              },
+              responsiveLevels: [1200, 992, 768, 480],
+              gridwidth: [870, 679, 640, 480],
+              gridheight: [468, 400, 360, 300],
+              lazyType: "smart",
+              spinner: "spinner2",
+              parallax: {
+                type: "off",
+              },
+              debugMode: false,
+            });
+        }
+      });
+    </script>
+  </body>
+</html>
